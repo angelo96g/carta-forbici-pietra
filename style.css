@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    color: rgb(252, 248, 248);
+    font-family: 'arial'
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.item{
+    height: 50px;
+    
+}
+
+.move{
+    background-color: transparent;
+    border: 3px solid  rgb(243, 205, 14);
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.result{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score{
+    margin-top: 110px;
+    color: rgb(42, 248, 10);
+    font-size: 30px;
+}
+
+.reset{
+    
+   border: none;
+   font-size: 15px;
+   padding: 8px 50px;
+   cursor: pointer;
+   color: rgb(10, 10, 9);
+   background-color: rgb(243, 205, 14);
+   margin-top: 30px;
+}
+
+.moves img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+p.moves {
+    text-align: left;
+    font-size: 18px;
+}
+
+
+.vittoria {
+    color: green;
+    font-weight: bold;
+}
+
+.sconfitta {
+    color: red;
+    font-weight: bold;
+}
+
+.pareggio {
+    color: orange;
+    font-weight: bold;
+}
