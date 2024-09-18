@@ -1,51 +1,49 @@
-body{
+/* Stile generale */
+body {
     background-color: black;
     color: rgb(252, 248, 248);
-    font-family: 'arial'
+    font-family: 'arial';
 }
 
-.title{
+.title {
     font-size: 30px;
     font-weight: bold;
 }
 
-.item{
+.item {
     height: 50px;
-    
 }
 
-.move{
+.move {
     background-color: transparent;
-    border: 3px solid  rgb(243, 205, 14);
+    border: 3px solid rgb(243, 205, 14);
     width: 120px;
     height: 120px;
     border-radius: 60px;
     margin-right: 10px;
     cursor: pointer;
-
 }
 
-.result{
+.result {
     font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
 }
 
-.score{
+.score {
     margin-top: 110px;
     color: rgb(42, 248, 10);
     font-size: 30px;
 }
 
-.reset{
-    
-   border: none;
-   font-size: 15px;
-   padding: 8px 50px;
-   cursor: pointer;
-   color: rgb(10, 10, 9);
-   background-color: rgb(243, 205, 14);
-   margin-top: 30px;
+.reset {
+    border: none;
+    font-size: 15px;
+    padding: 8px 50px;
+    cursor: pointer;
+    color: rgb(10, 10, 9);
+    background-color: rgb(243, 205, 14);
+    margin-top: 30px;
 }
 
 .moves img {
@@ -58,7 +56,6 @@ p.moves {
     text-align: left;
     font-size: 18px;
 }
-
 
 .vittoria {
     color: green;
@@ -73,4 +70,51 @@ p.moves {
 .pareggio {
     color: orange;
     font-weight: bold;
+}
+
+/* Media query per schermi piccoli (dispositivi mobili) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 24px; /* Riduce la dimensione del titolo */
+    }
+
+    .move {
+        width: 90px;  /* Riduce la dimensione dei pulsanti */
+        height: 90px;
+        border-radius: 45px;
+        margin-right: 5px;
+    }
+
+    .item {
+        height: 40px; /* Riduce la dimensione delle immagini all'interno dei pulsanti */
+    }
+
+    .result {
+        font-size: 20px; /* Riduce la dimensione del testo del risultato */
+        margin-top: 30px; /* Riduce il margine sopra */
+    }
+
+    .score {
+        margin-top: 80px; /* Riduce il margine superiore */
+        font-size: 24px;  /* Riduce la dimensione del punteggio */
+    }
+
+    .reset {
+        font-size: 14px; /* Riduce la dimensione del testo del pulsante reset */
+        padding: 8px 30px; /* Riduce il padding del pulsante reset */
+    }
+
+    .moves img {
+        width: 40px; /* Riduce la dimensione delle immagini delle mosse */
+        height: 40px;
+    }
+
+    p.moves {
+        font-size: 16px; /* Riduce la dimensione del testo delle mosse */
+        text-align: center; /* Centra il testo */
+    }
 }
