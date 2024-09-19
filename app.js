@@ -180,35 +180,35 @@ function resetta(){
             resultElement.innerHTML = `${risultato}`;
         }
 
-        let messaggi = [
-            "ti amo pulcina",
-            "sei una patatina",
-            "voglio abbracciarti",
-            "e abbracciarmi a te",
-            "ancora amo?",
-            "dai basta",
-            "e va bene!",
-            "ti amooooooooooo",
-        ];
+        // let messaggi = [
+        //     "ti amo pulcina",
+        //     "sei una patatina",
+        //     "voglio abbracciarti",
+        //     "e abbracciarmi a te",
+        //     "ancora amo?",
+        //     "dai basta",
+        //     "e va bene!",
+        //     "ti amooooooooooo",
+        // ];
         
-        let clickCounter = 0;
+        // let clickCounter = 0;
         
-        function amo() {
-            // Calcola l'indice del messaggio corrente usando il modulo per farlo ciclare
-            let indiceMessaggio = clickCounter % messaggi.length;
-            let messaggio = messaggi[indiceMessaggio];
+        // function amo() {
+        //     // Calcola l'indice del messaggio corrente usando il modulo per farlo ciclare
+        //     let indiceMessaggio = clickCounter % messaggi.length;
+        //     let messaggio = messaggi[indiceMessaggio];
         
-            const nuovoParagrafo = document.createElement('p');
-            nuovoParagrafo.innerText = messaggio;
+        //     const nuovoParagrafo = document.createElement('p');
+        //     nuovoParagrafo.innerText = messaggio;
         
-            // Aggiunge uno stile personalizzato al testo
-            nuovoParagrafo.style.color = "white";
-            nuovoParagrafo.style.fontSize = "20px";
-            nuovoParagrafo.style.marginTop = "20px";
+        //     // Aggiunge uno stile personalizzato al testo
+        //     nuovoParagrafo.style.color = "white";
+        //     nuovoParagrafo.style.fontSize = "20px";
+        //     nuovoParagrafo.style.marginTop = "20px";
         
-            document.body.appendChild(nuovoParagrafo);
+        //     document.body.appendChild(nuovoParagrafo);
         
-            // Incrementa il contatore per il prossimo click
-            clickCounter++;
-        }
+        //     // Incrementa il contatore per il prossimo click
+        //     clickCounter++;
+        // }
         
